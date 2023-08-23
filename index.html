@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+  <div id="rating_card">
+    <div class="circle small">
+    <img id="star" src="./images/icon-star.svg" alt="a glowing star"></img>
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!
+    </p>
+    <form action="">
+      <div class="radiobuttons">
+        <div class="choice" >
+          <label for="one" tabindex="0" class="circle">1</label>
+          <input  id ="one" type="radio" value="1" name="rating" required>
+        </div>
+        <div class="choice" >
+        <label for="two" tabindex="0" class="circle">2</label>
+        <input  id ="two" type="radio" value="2" name="rating">
+        </div>
+        <div class="choice" >
+          <label for="three" tabindex="0" class="circle">3</label>
+          <input  id ="three" type="radio" value="3" name="rating">
+        </div>
+        <div class="choice" >
+          <label for="four" tabindex="0" class="circle">4</label>
+          <input  id ="four" type="radio" value="4" name="rating">
+        </div>
+        <div class="choice" >
+          <label for="five" tabindex="0" class="circle">5</label>
+          <input  id ="five" type="radio" value="5" name="rating">
+        </div>
+       
+    </div>
+    
+  </form>
+  <button id="submit">Submit</button>
+  </div>
+
+  <div id="thankyou_card">
+  <img src="./images/illustration-thank-you.svg" alt="">
+  <p class="para1">You selected <span id="selected_value"></span> out of 5</p>
+
+  <h2 class="thankyou">Thank you!</h2>
+  
+    <p class="para2">
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+  </div>
+
+</div>
+  <script src="app.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
